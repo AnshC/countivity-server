@@ -1,0 +1,33 @@
+{
+  "name": "countivity",
+  "version": "1.0.0",
+  "description": "A web app for self care ",
+  "main": "server.js",
+  "engines": {
+    "node": "14.x",
+    "npm": "6.x"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "client-install": "npm install --prefix client",
+    "client": "npm start --prefix client",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+  },
+  "keywords": [
+    "mlh",
+    "hackathon",
+    "mental",
+    "health",
+    "hacks",
+    "reactJS"
+  ],
+  "author": "Ansh Chauhan",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "firebase": "^8.6.2",
+    "nodemon": "^2.0.7"
+  }
+}
